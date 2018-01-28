@@ -8,6 +8,8 @@ framework and a bunch of development and testing tools for instant web developme
 
 This app is for card game players to make their scoring easier.
 
+This change has been added by me.
+
 
 ## Getting Started
 
