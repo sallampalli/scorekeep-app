@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>My AngularJS App</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">\
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
@@ -17,37 +17,50 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Scorekeeper Pro</a>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">ScoreKeep Pro</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Game <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Score</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Player <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Add new player</a></li>
-              <li><a href="#">View Player Profile</a></li>
-            </ul>
-          </li>
-        </ul>
-
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+    <div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Dashboard<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Game</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Player</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Score</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+    </div>
   </nav>
-
+<div class="row">
+  <div class="container">
+    <div class="row">
+    <div class="card border-primary mb-3" style="max-width: 20rem;">
+      <div class="card-header">Game</div>
+      <div class="card-body text-primary">
+        <h4 class="card-title">Create new game</h4>
+      </div>
+    </div>
+      <div class="card border-secondary mb-3" style="max-width: 20rem;">
+        <div class="card-header">Player</div>
+        <div class="card-body text-primary">
+          <h4 class="card-title">Add new player</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   <div ng-view></div>
 
 
